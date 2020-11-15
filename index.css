@@ -1,0 +1,151 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+.display-picture{
+    height: 280px;
+    width: 280px;
+    border-radius: 100%;
+}
+.profile-description{
+    width: 25%;
+}
+.repos {
+    width: 75%;
+}
+h3{
+    margin: 0
+}
+h4 {
+    margin: 0;
+}
+.repositories {
+    margin-top: 30px;
+}
+.repo-top{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.repo-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 30px;
+}
+.repo {
+    border-bottom: 1px solid #e1e4e8;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+.name {
+    color: blue
+}
+.name-bio{
+   padding: 10px 30px;
+}
+.small-circle{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.tab {
+    border-bottom: 2px solid red;
+    width: fit-content;
+    position: relative;
+    top: 9px;
+    padding-bottom: 7px;
+}
+.btn{
+    position: absolute;
+    display: inline-block;
+    padding: 3px 12px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid;
+    border-radius: 6px;
+    appearance: none;
+    right: 44px;
+}
+.repo-search{
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #24292e;
+    vertical-align: middle;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    outline: none;
+    width: -webkit-fill-available;
+}
+.header{
+    border-bottom:  1px solid #e1e4e8;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+}
+.repo-count{
+    border-bottom: 1px solid #e1e4e8;
+    padding-bottom: 15px;
+    width: fit-content;
+}
+.search-cont{
+    border-bottom: 1px solid #e1e4e8;
+    padding-bottom: 15px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.label {
+    display: inline-block;
+    padding: 0 7px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 2em;
+    background-color: initial!important;
+    border: 1px solid transparent;
+    color: #586069;
+    border-color: #e1e4e8;
+    margin-left: 13px;
+}
+
+@media (max-width: 1024px) {
+    .container{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .profile-description{
+        width: 100%;
+        display: flex;
+    }
+    .repos {
+        width: 100%;
+    }
+    .repo-bottom {
+        width: auto;
+    }
+    .display-picture{
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+        background-color: aqua;
+    }
+}
