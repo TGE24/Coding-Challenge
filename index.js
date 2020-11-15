@@ -38,7 +38,6 @@ const user = (login, limit, affiliations) => `{
 
 const renderProfile = ({ data }) => {
   const { avatarUrl, name, login, bio, repositories } = data.user;
-  console.log(repositories.edges)
   displayPicture.src = avatarUrl
   fullName.innerHTML = name
   userName.innerHTML = login
@@ -120,3 +119,7 @@ const options = {
 
 fetch(`https://api.github.com/graphql`, options)
   .then(res => res.json()).then(renderProfile)
+
+
+  //Personal Access Token
+  // b8d72dede90b144f2c89002c0e989839e7803fb4
