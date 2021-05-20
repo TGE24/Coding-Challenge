@@ -4,7 +4,7 @@ const userName = document.querySelector("#username");
 const biography = document.querySelector("#bio");
 const repoCount = document.querySelector("#repo-count")
 const repoContainer = document.querySelector("#repo-cont")
-
+console.log(process.env)
 const user = (login, limit, affiliations) => `{ 
     user(login: "${login}") {  
         id
