@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        <Image src="/images/tour-bg-top.png" layout="fill" alt="Test" />
+        <img src="/images/tour-bg-top.png" alt="Test" />
 
         <p className={styles.description}>
           Get started by editing{" "}
